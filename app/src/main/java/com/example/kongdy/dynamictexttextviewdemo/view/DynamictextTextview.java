@@ -125,6 +125,21 @@ public class DynamictextTextview extends TextView {
      * 控件参数类
      */
     public class DynamictextParams{
+
+        public DynamictextParams(URLSpan urlSpan, String text, int size, int foregroundColor, int backgrounColor, Typeface typeface, boolean isUnderLine) {
+            this.urlSpan = urlSpan;
+            this.text = text;
+            this.size = size;
+            this.foregroundColor = foregroundColor;
+            this.backgrounColor = backgrounColor;
+            this.typeface = typeface;
+            this.isUnderLine = isUnderLine;
+        }
+
+        public DynamictextParams(String text) {
+            this.text = text;
+        }
+
         /** 文字 */
         public String text;
         /** 文字大小 */
