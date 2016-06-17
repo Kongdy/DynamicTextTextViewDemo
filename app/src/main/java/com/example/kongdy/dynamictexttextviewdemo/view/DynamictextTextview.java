@@ -90,7 +90,7 @@ public class DynamictextTextview extends TextView {
      * 设置参数
      * @param dynamictextParams
      */
-    public void setDynamictextParams(DynamictextParams dynamictextParams) {
+    public void addDynamictextParams(DynamictextParams dynamictextParams) {
         if(dynamictextParams != null && !TextUtils.isEmpty(dynamictextParams.text)) {
             String newText = getText()+dynamictextParams.text;
             CharSequence oldText = getText();
